@@ -19,15 +19,21 @@ function App() {
     <Router>
       <Routes>        
          
-          <Route path='/' element={<Home />} />            
+          <Route path='/' element={<Home />} /> 
+
           <Route path='destination' element={<Destination />}>
             <Route index element={<Moon />} />
             <Route path='mars' element={<Mars />} />
             <Route path='europa' element={<Europa />} />
-            <Route path='titan' element={<Titan />} />
-            
+            <Route path='titan' element={<Titan />} />            
           </Route>
+
           <Route path='crew' element={<Crew />}/>
+            {/*<Route index path='hurley' element={<Titan />} />
+            <Route path='shuttleworth' element={<Titan />} />
+            <Route path='glover' element={<Titan />} />
+            <Route path='ansari' element={<Titan />} />*/}
+
           <Route path='technology' element={<Technology />}/>
         
       </Routes>
