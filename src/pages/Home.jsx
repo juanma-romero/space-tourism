@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 const Home = () => {
   return (
     <>
+      <div className='line absolute'></div>
       <Navbar />
       <main>
         <h2>So, you want to travel to</h2>

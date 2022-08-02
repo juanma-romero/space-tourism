@@ -1,4 +1,25 @@
+body {
+  background-image: url('/src/assets/home/background-home-desktop.jpg');
+  color: white;
+}
+
 h1 {
   
   font-family: 'Bellefair', serif;
+}
+
+/* navbar */
+.line {
+  width: 473px;
+  border: 0.5px solid white;
+  opacity: 0.4;
+  left: 10rem;
+  top: 5.5rem;  
+}
+
+.navbar {
+  width: 830px;
+  height: 96px;
+  background-color: rgb(34, 34, 21);
+  
 }
