@@ -3,17 +3,18 @@ import Navbar from './Navbar';
 const Home = () => {
   return (
     <>
-      <div className='line absolute'></div>
+      <div className='line absolute z-10'></div>
       <Navbar />
-      <main>
-        <h2>So, you want to travel to</h2>
-        <h1 className='text-[150px]'>Space</h1>
+      <main className='mt-28 ml-40'>
+        <h5 className='text-[28px]'>SO, YOU WANT TO TRAVEL TO</h5>
+        <h1 className='text-[150px]'>SPACE</h1>
         <p>Let’s face it; if you want to go to space, you might as well genuinely go to 
           outer space and not hover kind of on the edge of it. Well sit back, and relax 
           because we’ll give you a truly out of this world experience!
-        </p>
+        </p>        
       </main>
       <aside>Explore</aside>
+      
     </>
   )
 }

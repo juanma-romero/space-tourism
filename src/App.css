@@ -8,18 +8,43 @@ h1 {
   font-family: 'Bellefair', serif;
 }
 
+.navbarLink, h5 {
+  font-family: 'Barlow Condensed', sans-serif;
+
+}
+h5 {
+  letter-spacing: 4.5px;
+}
 /* navbar */
+.navbarLink {
+letter-spacing: 2.7px;
+
+
+
+}
+
+.navbarLink0:hover, .navbarLink1:hover, .navbarLink2:hover, .navbarLink3:hover {
+  padding-bottom: 36px;
+  border-bottom: 3px solid white;
+  margin-top: 28px;
+}
+
 .line {
   width: 473px;
   border: 0.5px solid white;
-  opacity: 0.4;
-  left: 10rem;
-  top: 5.5rem;  
+  opacity: 0.25;
+  height: 0.5px;
+  left: 167px;
+  top: 88px; 
 }
 
 .navbar {
   width: 830px;
-  height: 96px;
-  background-color: rgb(34, 34, 21);
+  height: 96px; 
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(81.5485px); 
+}
+span {
+  font-weight: 700;
   
 }
