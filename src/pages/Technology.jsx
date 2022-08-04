@@ -1,14 +1,16 @@
 import datos from '../data.json'
 import Navbar from './Navbar'
+import launch from '../assets/technology/image-launch-vehicle-portrait.jpg'
 
 const Technology = () => {
   //pull data from data.json
+  
   const dataTech = datos.technology.map(({ name, description }) => (
     <div
       key={name}
     >
-      <p>Name: {name} </p>
-      <p>Description: {description}</p>
+      <p>{name} </p>
+      <p>{description}</p>
       
     </div>
   ))
@@ -16,8 +18,10 @@ const Technology = () => {
   return (
     <>
     <Navbar />
-    <div>Technology</div>
-    {dataTech}
+    <div>03 SPACE LAUNCH 101</div>
+    <p>THE TERMINOLOGY...</p>
+    <img src={launch} />
+    {dataTech[0]}
     
 
     </>

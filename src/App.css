@@ -5,16 +5,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-
  /* background-image: url('/src/assets/destination/background-destination-desktop.jpg');
 */
 
-h1, .explore {
+.explore {
   
   font-family: 'Bellefair', serif;
 }
-
 .navbarLink, h5 {
   font-family: 'Barlow Condensed', sans-serif;
 
@@ -26,7 +23,7 @@ h5 {
 
 /* navbar */
 
-.navbarLink {
+.navbarLink, .linkPanet  {
 letter-spacing: 2.7px;
 }
 
@@ -52,8 +49,7 @@ letter-spacing: 2.7px;
   backdrop-filter: blur(81.5485px); 
 }
 span {
-  font-weight: 700;
-  
+  font-weight: 700;  
 }
 .logo:hover {
   transition: .5s;
@@ -69,30 +65,27 @@ span {
   background-color: white;
   display: flex; 
   justify-content: center;
-  align-items: center;
-  
-  
+  align-items: center;  
 }
 .exploreText {
   font-size: 2rem;
-  color: #0B0D17;
-  
+  color: #0B0D17;  
 }
 .main {
   column-gap: 119px;
-  margin-bottom: 131px;
+  margin-bottom: 140px;
 }
 
 .backExplore {
   position: absolute;
   left: 836px;
-  top: 523px;
+  top: 407px;
   width: 450px;
   height: 450px;
   border-radius: 50%;
   background-color: white;
   opacity: 0;
-  cursor: pointer;
+  cursor: pointer;  
 }
 
 .backExplore:hover {
@@ -100,8 +93,26 @@ span {
   transition: opacity 0.7s ease-in-out;
 }
 
-
-
 .textMain, .sublineMain {
   color: #D0D6F9;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  letter-spacing: 0.04rem;
+}
+
+.descPlanet {
+  width: 30vw;
+  letter-spacing: 0.04rem;
+  font-size: 1.125rem;
+}
+
+.linkPanet1:hover, .linkPanet2:hover, .linkPanet3:hover, .linkPanet4:hover, .linkPanet5:hover {
+  padding-bottom: 12px;
+  border-bottom: 1px solid white; 
+  color: white;
+}
+
+.dataTravel {
+  border-top: 2px solid #383B4B;
+  margin-top: 64px;
 }

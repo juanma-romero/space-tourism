@@ -6,6 +6,7 @@ const Navbar = () => {
   return (
     
       <div className='navbarMain flex justify-between'>
+        <div className='line absolute z-10'></div>
         <NavLink to={'/'} ><img className='logo mt-16 ml-14' src='src/assets/shared/logo.svg' /></NavLink>
         
         <div className="navbar mt-10 z-0 flex justify-center items-center">
