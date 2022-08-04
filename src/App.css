@@ -1,9 +1,16 @@
 body {
   background-image: url('/src/assets/home/background-home-desktop.jpg');
   color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-h1 {
+.homePage {
+  background-image: url('/src/assets/destination/background-destination-desktop.jpg');
+}
+
+h1, .explore {
   
   font-family: 'Bellefair', serif;
 }
@@ -15,12 +22,12 @@ h1 {
 h5 {
   letter-spacing: 4.5px;
 }
+
+
 /* navbar */
+
 .navbarLink {
 letter-spacing: 2.7px;
-
-
-
 }
 
 .navbarLink0:hover, .navbarLink1:hover, .navbarLink2:hover, .navbarLink3:hover {
@@ -47,4 +54,54 @@ letter-spacing: 2.7px;
 span {
   font-weight: 700;
   
+}
+.logo:hover {
+  transition: .5s;
+  transform: rotate(360deg);
+  animation-timing-function:ease-in-out;
+}
+
+/* home page */
+.explore {  
+  width: 17rem;
+  height: 17rem;
+  border-radius: 50%;  
+  background-color: white;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.exploreText {
+  font-size: 2rem;
+  color: #0B0D17;
+  
+}
+.main {
+  column-gap: 119px;
+  margin-bottom: 131px;
+}
+
+.backExplore {
+  position: absolute;
+  left: 836px;
+  top: 523px;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.backExplore:hover {
+  opacity: 0.1;
+  transition: opacity 0.7s ease-in-out;
+}
+
+
+
+.textMain, .sublineMain {
+  color: #D0D6F9;
 }
