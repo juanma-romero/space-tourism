@@ -1,7 +1,13 @@
 import Navbar from './Navbar';
+import { useEffect } from 'react'
 
 const Home = () => {
-  
+  useEffect(() => {
+    document.body.style.backgroundImage = "url(/src/assets/home/background-home-desktop.jpg)";
+    document.body.style.backgroundPosition = 'center';
+    document.body.style.backgroundRepeat = 'no-repeat';
+    document.body.style.backgroundsize = 'cover';    
+  }, [])
   return (
     <>   
       {/* background when hover on 'Explore' text (line 20) */}
