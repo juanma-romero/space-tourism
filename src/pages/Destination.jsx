@@ -6,7 +6,7 @@ const Destination = () => {
   return (
     <>
       <Navbar />
-      <div>Destination</div>
+      <p>01 PICK YOUR DESTINATION</p>
       <nav>
         <Link to='/destination'>Moon</Link>
         <Link to='mars'>Mars</Link>

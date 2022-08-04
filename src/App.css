@@ -6,9 +6,9 @@ body {
   background-size: cover;
 }
 
-.homePage {
-  background-image: url('/src/assets/destination/background-destination-desktop.jpg');
-}
+
+ /* background-image: url('/src/assets/destination/background-destination-desktop.jpg');
+*/
 
 h1, .explore {
   

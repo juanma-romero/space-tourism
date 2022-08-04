@@ -1,4 +1,5 @@
 import datos from '../data.json'
+import europa from '../assets/destination/image-europa.png'
 
 const Europa = () => {
   //pull data from data.json
@@ -6,7 +7,7 @@ const Europa = () => {
    
   return (
     <>
-    
+    <img src={europa} />
     <div>{dataEuropa.name}</div>
     
       <p>Description: {dataEuropa.description} </p>

@@ -1,4 +1,5 @@
 import datos from '../data.json'
+import titan from '../assets/destination/image-titan.png'
 
 const Titan = () => {
   //pull data from data.json
@@ -6,7 +7,7 @@ const Titan = () => {
    
   return (
     <>
-    
+    <img src={titan} />
     <div>{dataTitan.name}</div>
     
       <p>Description: {dataTitan.description} </p>

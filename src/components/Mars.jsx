@@ -1,4 +1,5 @@
 import datos from '../data.json'
+import mars from '../assets/destination/image-mars.png'
 
 const Mars = () => {
   //pull data from data.json
@@ -6,7 +7,7 @@ const Mars = () => {
    
   return (
     <>
-    
+    <img src={mars} />
     <div>{dataMars.name}</div>
     
       <p>Description: {dataMars.description} </p>
