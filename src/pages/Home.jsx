@@ -16,7 +16,7 @@ const Home = () => {
       <Navbar />
       <div className='main flex justify-around mr-8 mt-60 items-end'>
         <main className=' '>
-          <h5 className='text-1.75rem sublineMain'>SO, YOU WANT TO TRAVEL TO</h5>
+          <h5 className='text-1.75rem sublineMain tracking-treintaRem'>SO, YOU WANT TO TRAVEL TO</h5>
           <h1 className='text-10xl font-bellefair'>SPACE</h1>
           <p className='textMain w-100 h-auto tracking-wider font-barlow'>Let’s face it;
            if you want to go to space, you might as well genuinely go to 

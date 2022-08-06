@@ -117,3 +117,31 @@ span {
   border-top: 2px solid #383B4B;
   margin-top: 64px;
 }
+
+.buttonSelec {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.17;
+}
+
+.buttonSelec::selection {
+  opacity: 100%;
+}
+.buttonSelec:hover {
+  opacity: 100%;
+}
+.buttonSpace {
+  height: 80px;
+  width: 80px;
+  color: white;
+  
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, .25);
+  
+}
+.buttonSpace:hover {
+  color: #0B0D17;
+  background-color: white;
+}
