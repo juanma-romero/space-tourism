@@ -1,19 +1,30 @@
-
 import { NavLink } from "react-router-dom";
 
+const Navbar = () => {  
+  let activeStyle = {
+    paddingBottom: '2rem',
+    borderBottom: '3px solid white',
+    marginTop: '1.75rem'
+  }
 
-const Navbar = () => {
   return (
     
-      <div className='navbarMain flex justify-between'>
-        <div className='line absolute z-10'></div>
-        <NavLink to={'/'} ><img className='logo mt-16 ml-14' src='src/assets/shared/logo.svg' /></NavLink>
-        
-        <div className="navbar mt-10 z-0 flex justify-center items-center">
-          <NavLink to={'/'} className='navbarLink navbarLink0 ml-10'><span>00</span> HOME</NavLink>
-          <NavLink to={'/destination'} className='navbarLink navbarLink1 ml-10'><span>01</span> DESTINATION</NavLink>
-          <NavLink to={'/crew'} className='navbarLink navbarLink2 ml-10'><span>02</span> CREW</NavLink>
-          <NavLink to={'/technology'} className='navbarLink navbarLink3 ml-10'><span>03</span> TECHNOLOGY</NavLink>
+      <div className='navbarMain mt-12 grid grid-cols-12 grid-rows-1 items-center'>
+        <NavLink className='col-start-1 ml-14' to={'/'} ><img className='logo' src='src/assets/shared/logo.svg'/></NavLink>
+        <div className='line ml-12 z-10 col-start-2'></div>        
+        <div className="navbar z-0 col-start-6 flex justify-center items-center">
+          <NavLink to={'/'} style={({ isActive }) =>
+              isActive ? activeStyle : undefined
+            } id='navbarLink0' className='navbarLink ml-10'><span>00</span> HOME</NavLink>
+          <NavLink to={'/destination'} style={({ isActive }) =>
+              isActive ? activeStyle : undefined
+            } id='navbarLink1' className='navbarLink ml-10'><span>01</span> DESTINATION</NavLink>
+          <NavLink to={'/crew'} style={({ isActive }) =>
+              isActive ? activeStyle : undefined
+            } id='navbarLink2' className='navbarLink ml-10'><span>02</span> CREW</NavLink>
+          <NavLink to={'/technology'} style={({ isActive }) =>
+              isActive ? activeStyle : undefined
+            } id='navbarLink3' className='navbarLink ml-10'><span>03</span> TECHNOLOGY</NavLink>
         </div>
       </div>
     

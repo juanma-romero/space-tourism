@@ -12,15 +12,21 @@ const Europa = () => {
   }, [])
   const dataEuropa = datos.destinations[2]
    
+  let activeStyle2 = {    
+    paddingBottom: '12px',
+    borderBottom:'1px solid white',
+    color: 'white',
+  }
+
   return (
     <div className='flex gap-40'>
-      <img className='mt-20 ml-56 ' src={europa} />
+      <img id='imagePlanet' className='mt-20 ml-56 ' src={europa} />
       <div className='dataPlanet'>
         <nav>
-        <Link to='/destination'><p className='linkPanet linkPanet1 inline font-barlow text-celestito'>MOON</p></Link>
-          <Link to='/destination/mars'><p className='linkPanet linkPanet2 inline ml-8 font-barlow text-celestito'>MARS</p></Link>
-          <Link to='/destination/europa'><p className='linkPanet linkPanet3 inline ml-8 font-barlow text-celestito'>EUROPA</p></Link>
-          <Link to='/destination/titan'><p className='linkPanet linkPanet5 inline ml-8 font-barlow text-celestito'>TITAN</p></Link>
+          <Link to='/destination'><p className='linkPanet linkPanet1 inline font-barlow text-celestito'>MOON</p></Link>
+          <Link to='/destination/mars' className='ml-8'><p className='linkPanet linkPanet2 inline font-barlow text-celestito'>MARS</p></Link>
+          <Link to='/destination/europa' style={activeStyle2} className='ml-8'><p className='linkPanet linkPanet3 inline font-barlow text-celestito'>EUROPA</p></Link>
+          <Link to='/destination/titan' className='ml-8'><p className='linkPanet linkPanet5 inline font-barlow text-celestito'>TITAN</p></Link>
         </nav>
         <h2 className='font-bellefair text-6.25Rem'>{dataEuropa.name.toUpperCase()}</h2>      
         <p className='descPlanet text-celestito text-lg leading-8 font-barlow'>{dataEuropa.description}</p>

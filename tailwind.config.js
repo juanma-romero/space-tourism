@@ -5,7 +5,7 @@ module.exports = {
   ],
   theme: {
     fontSize: {
-      '10xl': '9.375rem',
+      '10xl': '10vw',
       '1.75rem': '1.75rem',
       '2rem': '2rem',
       '3.5rem': '3.5rem',
@@ -29,6 +29,10 @@ module.exports = {
       colors: {
         'celestito': '#D0D6F9',
       },
+      margin: {
+        '30': '10rem',
+        '37vh': '37vh'
+      }
     },
   },
   plugins: [],

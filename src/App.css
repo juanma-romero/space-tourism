@@ -1,56 +1,47 @@
-body {
-  
-  color: white;  
-  /*background-image: url('/src/assets/home/background-home-desktop.jpg');  
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;*/
+body {  
+  color: white;   
 }
- /* background-image: url('/src/assets/destination/background-destination-desktop.jpg');
-*/
-
-.explore {
-  
-  font-family: 'Bellefair', serif;
-}
-.navbarLink, h5 {
+.navbarLink {
   font-family: 'Barlow Condensed', sans-serif;
-
 }
 h5 {
-  letter-spacing: 4.5px;
+  letter-spacing: .25rem;
 }
-
 
 /* navbar */
 
 .navbarLink, .linkPanet  {
-letter-spacing: 2.7px;
+letter-spacing: .16rem;
 }
 
-.navbarLink0:hover, .navbarLink1:hover, .navbarLink2:hover, .navbarLink3:hover {
-  padding-bottom: 36px;
+#navbarLink0:hover, #navbarLink1:hover, #navbarLink2:hover, #navbarLink3:hover {
+  padding-bottom: 2rem;
   border-bottom: 3px solid white;
-  margin-top: 28px;
+  margin-top: 1.75rem;
 }
 
 .line {
-  width: 473px;
+  width: 37vw;
   border: 0.5px solid white;
   opacity: 0.25;
-  height: 0.5px;
-  left: 167px;
-  top: 88px; 
+  height: 0.5px;   
 }
 
 .navbar {
-  width: 830px;
-  height: 96px; 
+  width: 57vw;
+  margin-left: 5%;
+  height: 14vh; 
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(81.5485px); 
 }
 span {
   font-weight: 700;  
+}
+.logo{
+  width: 48px;
+  height: auto;
+  max-width: none;
+
 }
 .logo:hover {
   transition: .5s;
@@ -59,34 +50,32 @@ span {
 }
 
 /* home page */
+.main {
+  column-gap: 7.43rem;
+  
+}
+
 .explore {  
-  width: 17rem;
-  height: 17rem;
+  width: 20vw;
+  height: 20vw;
   border-radius: 50%;  
-  background-color: white;
-  display: flex; 
-  justify-content: center;
-  align-items: center;  
+  background-color: white; 
+  align-items: center;
+  justify-items: center  
 }
 .exploreText {
   font-size: 2rem;
-  color: #0B0D17;  
+  color: #0B0D17; 
+  grid-area: 1 / 1 / 2 / 2; 
 }
-.main {
-  column-gap: 119px;
-  margin-bottom: 140px;
-}
-
-.backExplore {
-  position: absolute;
-  left: 836px;
-  top: 407px;
-  width: 450px;
-  height: 450px;
+.backExplore {  
+  width: 32vw;
+  height: 32vw;
   border-radius: 50%;
   background-color: white;
   opacity: 0;
-  cursor: pointer;  
+  cursor: pointer; 
+  grid-area: 1 / 1 / 2 / 2; 
 }
 
 .backExplore:hover {
@@ -98,7 +87,11 @@ span {
   color: #D0D6F9;
   font-size: 1.125rem;
   line-height: 2rem;
-  letter-spacing: 0.04rem;
+  letter-spacing: 0.04rem;  
+}
+
+.textMain {
+  width: 32vw;
 }
 
 .descPlanet {
@@ -115,7 +108,7 @@ span {
 
 .dataTravel {
   border-top: 2px solid #383B4B;
-  margin-top: 64px;
+  margin-top: 4rem;
 }
 
 .buttonSelec {
@@ -126,22 +119,43 @@ span {
   opacity: 0.17;
 }
 
+/*  destination  */ 
+
+
+
+
 .buttonSelec::selection {
   opacity: 100%;
 }
 .buttonSelec:hover {
-  opacity: 100%;
+  opacity: 50%;
 }
 .buttonSpace {
-  height: 80px;
-  width: 80px;
-  color: white;
-  
+  height: 5rem;
+  width: 5rem;
+  color: white;  
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, .25);
-  
+  border: 1px solid rgba(255, 255, 255, .25);  
 }
+
 .buttonSpace:hover {
   color: #0B0D17;
   background-color: white;
+}
+
+.nameCrew, .nameTech {
+  width: 45vw;
+}
+
+@media (max-width: 400px) {
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 913px) {
+  #imagePlanet {
+    
+  }
 }
