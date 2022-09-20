@@ -5,7 +5,7 @@ import RingLoader from "react-spinners/RingLoader"
 const Home = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    document.body.style.backgroundImage = "url(src/assets/home/background-home-desktop.jpg)";
+    document.body.style.backgroundImage = "url(../assets/home/background-home-desktop.jpg)";
     document.body.style.backgroundPosition = 'center';
     document.body.style.backgroundRepeat = 'no-repeat';
     document.body.style.backgroundsize = 'cover';    
