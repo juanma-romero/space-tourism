@@ -1,21 +1,24 @@
 import Navbar from './Navbar';
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import RingLoader from "react-spinners/RingLoader"
 
 const Home = () => {
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     document.body.style.backgroundImage = "url(src/assets/home/background-home-desktop.jpg)";
     document.body.style.backgroundPosition = 'center';
     document.body.style.backgroundRepeat = 'no-repeat';
     document.body.style.backgroundsize = 'cover';    
-  }, [])
+  }, []) 
 
-  
+  const color = '#36d7b7'
 
   return (
     <>
       <Navbar />
-      <div className='main flex justify-around ml-5 mr-8 mt-37vh items-end'>
+      <div className='main flex justify-around ml-5 mr-8 mt-20 items-end'>
         <main>
+          
           <h5 className='text-1.75rem sublineMain tracking-treintaRem font-barlow'>SO, YOU WANT TO TRAVEL TO</h5>
           <h1 className='text-10xl font-bellefair'>SPACE</h1>
           <p className='textMain h-auto tracking-wider font-barlow'>Let’s face it;
@@ -34,3 +37,8 @@ const Home = () => {
 }
 
 export default Home
+
+/*
+<button onClick={() => setLoading(!loading)}>Toggle Loader</button>
+          <RingLoader loading={loading} size={150} color={color} />
+*/

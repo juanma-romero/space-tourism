@@ -8,9 +8,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "halogen": "^0.2.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-router-dom": "^6.3.0"
+    "react-router-dom": "^6.3.0",
+    "react-spinners": "^0.13.4"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",

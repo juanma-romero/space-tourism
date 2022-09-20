@@ -19,8 +19,8 @@ const Moon = () => {
   }
 
   return (
-    <div className='flex gap-40'>
-      <img className='mt-20 ml-56 ' src={moon} />
+    <div className='aboutPlanet flex gap-40'>
+      <img className='mt-2 ml-56 ' src={moon} />
       <div className='dataPlanet'>
         <nav>
           <NavLink 

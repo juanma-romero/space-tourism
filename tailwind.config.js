@@ -14,7 +14,7 @@ module.exports = {
     },
     width: {
       '100': '27.75rem',
-      '444':'30vw',
+      '444':'25vw',
 
     },
     letterSpacing: {

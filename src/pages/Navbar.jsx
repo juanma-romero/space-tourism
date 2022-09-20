@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     
-      <div className='navbarMain mt-12 grid grid-cols-12 grid-rows-1 items-center'>
+      <div className='navbarMain mt-8 grid grid-cols-12 grid-rows-1 items-center'>
         <NavLink className='col-start-1 ml-14' to={'/'} ><img className='logo' src='src/assets/shared/logo.svg'/></NavLink>
         <div className='line ml-12 z-10 col-start-2'></div>        
         <div className="navbar z-0 col-start-6 flex justify-center items-center">

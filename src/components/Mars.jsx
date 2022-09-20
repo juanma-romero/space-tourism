@@ -12,8 +12,7 @@ const Mars = () => {
   }, [])
   const dataMars = datos.destinations[1]
    
-  let activeStyle2 = {
-    
+  let activeStyle2 = {    
     paddingBottom: '12px',
     borderBottom:'1px solid white',
     color: 'white',
@@ -21,7 +20,7 @@ const Mars = () => {
 
   return (
     <div className='flex gap-40'>
-      <img className='mt-20 ml-56 ' src={mars} />
+      <img className='mt-2 ml-56 ' src={mars} />
       <div className='dataPlanet'>
         <nav>
           <Link to='/destination'><p className='linkPanet linkPanet1 inline font-barlow text-celestito'>MOON</p></Link>

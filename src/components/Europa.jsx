@@ -20,7 +20,7 @@ const Europa = () => {
 
   return (
     <div className='flex gap-40'>
-      <img id='imagePlanet' className='mt-20 ml-56 ' src={europa} />
+      <img id='imagePlanet' className='mt-2 ml-56 ' src={europa} />
       <div className='dataPlanet'>
         <nav>
           <Link to='/destination'><p className='linkPanet linkPanet1 inline font-barlow text-celestito'>MOON</p></Link>

@@ -21,7 +21,7 @@ const Titan = () => {
 
   return (
     <div className='flex gap-40'>
-      <img className='mt-20 ml-56 ' src={titan} />
+      <img className='mt-2 ml-56 ' src={titan} />
       <div className='dataPlanet'>
         <nav>
           <Link to='/destination'><p className='linkPanet linkPanet1 inline font-barlow text-celestito'>MOON</p></Link>
